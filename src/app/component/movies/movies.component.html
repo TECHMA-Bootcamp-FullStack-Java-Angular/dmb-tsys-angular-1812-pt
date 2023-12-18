@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row mt-4">
+    @for( movie of movies ; track movie.id ){
+    <div class="col-lg-2 mt-3">
+      <div class="card p-2"(click)="detail(movie.id)">
+        <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="Card image cap">
+      </div>
+    </div>
+    }
+  </div>
+</div>

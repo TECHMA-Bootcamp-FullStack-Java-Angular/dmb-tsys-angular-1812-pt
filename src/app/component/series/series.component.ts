@@ -9,17 +9,26 @@ import { Serie } from '../../models/Serie';
   templateUrl: './series.component.html',
   styleUrl: './series.component.css'
 })
-export class SeriesComponent  implements OnInit{
+export class SeriesComponent implements OnInit {
+
 
 
   serSerries = inject(SeriesService);
   series: Serie[] = [];
+  serie: Serie = {} as Serie;
 
   ngOnInit(): void {
     this.serSerries.getSeries().subscribe((data: any) => {
       this.series = data.results;
-      console.log(this.series);
     });
   }
 
+  detail(id: any) {
+    this.serSerries.getSerie(id).subscribe((data: any) => {
+      this.serie = data;
+      alert("Nombre Origianl: "+ this.serie.original_name + '\n\n' +'Puntación' + this.serie.vote_count +'\n\n'+ "descpocion :"+ this.serie.overview +'\n\n');
+
+      console.log(data);
+    });
+  }
 }

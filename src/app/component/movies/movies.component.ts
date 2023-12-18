@@ -20,15 +20,14 @@ export class MoviesComponent implements OnInit {
  ngOnInit(): void {
     this.serMovies.getMovis().subscribe((data: any) => {
       this.movies = data.results;
-      console.log(this.movies);
     });
  }
 
  detail( id: any) {
    this.serMovies.getMovie(id).subscribe((data: any) => {
-     this.movies = data.results;
-      alert(this.movie.title + ' ' + this.movie.overview);
-      console.log(this.movies);
+     this.movie = data;
+      alert("Nombre Origianl: "+ this.movie.original_title + '\n\n' +'Puntación' + this.movie.vote_count +'\n\n'+ "descpocion :"+ this.movie.overview +'\n\n');
+
    });
 }
 

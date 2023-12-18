@@ -10,13 +10,13 @@ This repository contains the Bootcamp tasks 👨‍💻
 
 [Click here to see the exercise](https://main.dabi6134x8fd5.amplifyapp.com/)
 
-![image](https://raw.githubusercontent.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-angular-0812-ta41/main/src/assets/Captura.png)
+![image](https://raw.githubusercontent.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-angular-1812-pt/main/src/assets/Captura.png)
 
 ## Rules of use 🤜🏼🤛🏼
 
 - Run the clone repository in your terminal:
 
-`git clone https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-angular-0812-ta41`
+`git clone https://github.com/TECHMA-Bootcamp-FullStack-Java-Angular/dmb-tsys-angular-1812-pt.git`
 
 - Access the folder with the command:
 
